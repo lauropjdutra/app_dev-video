@@ -13,7 +13,7 @@ import { Footer } from "./components/Footer";
 function App() {
   const [playVideo, setPlayVideo] = useState(false);
 
-  const [video, setVideo] = useState([]);
+  const [video, setVideo] = useState(apiData.movies[5]);
   const [movieData, setMovieData] = useState([]);
 
   const { imageLogo, title, description, linkSite, linkVideo, imageBanner } =
@@ -26,8 +26,6 @@ function App() {
   useEffect(() => {
     const getData = async () => {
       const { data } = await axios.get(`${baseUrl}/all`);
-      setMovieData(data);
-      setVideo(data.movies[5]);
     };
     getData();
   }, []);
@@ -40,10 +38,6 @@ function App() {
     setTimeout(() => {
       window.scrollTo({ top: 0 });
     }, 600);
-  };
-
-  const createAll = async () => {
-    await axios.post(`${baseUrl}/movie`, apiData?.movies);
   };
 
   return (
