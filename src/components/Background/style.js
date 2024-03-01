@@ -7,6 +7,11 @@ export const Container = styled.div`
   @media (max-width: 720px) {
     background: linear-gradient(0deg, rgba(10, 12, 16, 0.8) 40%, rgba(10, 12, 16, 0.3) 55%, rgba(10, 12, 16, 0) 70%), ${({ bgImage }) => `url(${bgImage}) center/cover no-repeat`};
   }
+  
+  @media (min-width: 2000px) {
+    background: linear-gradient(0deg, rgba(10, 12, 16, 0.8) 40%, rgba(10, 12, 16, 0.3) 55%, rgba(10, 12, 16, 0) 70%), ${({ bgImage }) => `url(${bgImage}) cover no-repeat`};
+    background-position-y: -200px;
+  }
   `
 
 export const ContainerGradient = styled.div`

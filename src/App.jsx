@@ -10,10 +10,26 @@ import { CarouselPosters as Carousel } from "./components/Carousel";
 import { Video } from "./components/Video";
 import { Footer } from "./components/Footer";
 
+const defaultSeries = {
+  title: "O Senhor dos Anéis: Os Anéis de Poder",
+  description:
+    "Baseado em “O Senhor dos Anéis” de J.R.R. Tolkien, uma nova aliança de personagens icônicos é forjada para enfrentar o ressurgimento de Sauron, o Senhor Sombrio, na Terra-média.",
+  imageLogo:
+    "https://m.media-amazon.com/images/S/pv-target-images/2ca088555052e8d58e3ff60f8d29c6e7aa6961fd3b8f0d8fd4c0ef5114b54a0c._SX600_FMpng_.png",
+  imagePoster:
+    "https://http2.mlstatic.com/D_NQ_NP_619085-MLB51631310837_092022-O.webp",
+  imageBanner: "https://i.redd.it/cop3wxfau7s91.png",
+  linkSite:
+    "https://www.primevideo.com/-/pt/detail/0TAPPIZDTWUZORUA92KX2Q54V2/ref=atv_dp_btf_el_prime_sd_tv_resume_t1ADAAAAAA0wg0?language=pt_BR&autoplay=1&t=2533",
+  linkVideo: "rYXfmXfeM38",
+  category: "series",
+  favorite: true,
+};
+
 function App() {
   const [playVideo, setPlayVideo] = useState(false);
 
-  const [video, setVideo] = useState(apiData.movies[5]);
+  const [video, setVideo] = useState(defaultSeries);
   const [movieData, setMovieData] = useState([]);
 
   const { imageLogo, title, description, linkSite, linkVideo, imageBanner } =
