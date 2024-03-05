@@ -32,7 +32,7 @@ export const Title = styled.h3`
   font-size: 1.25rem;
   font-weight: 600;
   /* display: flex; */
-  margin: 1rem 0 1rem 10px;
+  margin: 1rem 0 0 10px;
   border-bottom: 1px solid #49cafa;
   padding: 0 10px 10px;
 `;
