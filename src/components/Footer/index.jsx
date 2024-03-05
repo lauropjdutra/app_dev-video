@@ -4,7 +4,7 @@ import { CopyrightFooter } from "./style";
 export const Footer = () => (
   <CopyrightFooter>
     <h4 title="Desenvolvido por Lauro Dutra">
-      Copyright &copy; 2024 - Desenvolvido por<a href="https://www.linkedin.com/in/lauropjdutra" target="_blank"> Lauro Dutra</a>
+      Copyright &copy; 2024 por<a href="https://www.linkedin.com/in/lauropjdutra" target="_blank"> Lauro Dutra</a>
     </h4>
     <h5>
       Contato:

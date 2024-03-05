@@ -15,17 +15,22 @@ export const CopyrightFooter = styled.footer`
   }
 
   h4, h5 {
-    font-weight: 400;
+    font-weight: 300;
     font-size: 0.9rem;
+    word-spacing: 1px;
   }  
   
   a {
-    font-weight: bold;
+    font-weight: 500;
     text-decoration: none;
-    color: #5079f2;
+    color: #fff;
 
     &:hover {
-      color: #49f2fa;
+      color: #49c2f2cc;
+    }
+
+    &:active {
+      opacity: .7;
     }
   }
 `

@@ -44,26 +44,33 @@ export const CarouselPosters = ({ data, changeVideo, selected }) => {
 
   return (
     <C.Container>
-      <C.Title title="Favoritos" id="favorites">Favoritos</C.Title>
+      <C.Title title="Favoritos" id="favorites">
+        Favoritos
+      </C.Title>
       <Carousel responsive={responsive}>
-        {data.movies
-          .filter((item) => item.favorite)
-          .map((data, index) => (
-            <>
-              <C.PosterImage
-                bgImage={data.imagePoster}
-                title={data.title}
-                onClick={() => changeVideo(data)}
-                className={selected === data.title ? "selected" : ""}
-              />
-              <C.AltImage src="#" alt={data.title} />
-            </>
-          ))}
+        {
+          data.movies
+            .filter((item) => item.favorite === true)
+            .map((data, index) => (
+              <>
+                <C.PosterImage
+                  bgImage={data.imagePoster}
+                  title={data.title}
+                  onClick={() => changeVideo(data)}
+                  className={selected === data.title ? "selected" : ""}
+                />
+                <C.AltImage src="#" alt={data.title} />
+              </>
+            ))}
       </Carousel>
 
       {data?.categories?.map((category) => (
         <>
-          <C.Title key={category.name} title={category?.name} id={category?.type}>
+          <C.Title
+            key={category.name}
+            title={category?.name}
+            id={category?.type}
+          >
             {category?.name}
           </C.Title>
           <Carousel responsive={responsive}>
@@ -83,9 +90,11 @@ export const CarouselPosters = ({ data, changeVideo, selected }) => {
         </>
       ))}
 
-      <C.Title title="Todos" id="all">Todos</C.Title>
+      <C.Title title="Todos" id="all">
+        Todos
+      </C.Title>
       <Carousel responsive={responsive}>
-        {data.movies.map((data, index) => (
+        {data?.movies?.map((data, index) => (
           <>
             <C.PosterImage
               bgImage={data.imagePoster}

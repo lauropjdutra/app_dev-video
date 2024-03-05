@@ -15,10 +15,10 @@ export const Container = styled.div`
   `
 
 export const ContainerGradient = styled.div`
-  background: linear-gradient(0deg, #111111 60%, #11111199 68%, transparent 85%, #00000099 100%);
+  background: linear-gradient(0deg, #000022 30%, #000000 60%, #00000099 68%, transparent 85%, #00000099 100%);
 
   @media (max-width: 720px) {
-    background: linear-gradient(0deg, #111111 55%, #11111199 70%, transparent 85%, #00000099 100%);
+    background: linear-gradient(0deg, #000022 30%, #000000 55%, #00000099 70%, transparent 85%, #00000099 100%);
   }
 `
 
