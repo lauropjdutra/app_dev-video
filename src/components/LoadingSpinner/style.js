@@ -45,10 +45,9 @@ const opacityAnimation = keyframes`
     opacity: 1;
   }
   100% {
-    opacity: 1;
-    filter: brightness(1.3);
+    opacity: 0.5;
   }
-`;
+  `;
 
 export const LoadingContainer = styled.div`
   background: radial-gradient(#badaff 0%, #73b4ff 100%);
@@ -59,6 +58,7 @@ export const LoadingContainer = styled.div`
   height: 100vh;
   animation: ${opacityAnimation} 1s ease-in-out;
   animation-delay: 1.75s;
+  filter: brightness(1.3);
 
   div {
     display: flex;
@@ -67,7 +67,7 @@ export const LoadingContainer = styled.div`
     justify-content: center;
     gap: 10px;
     animation: ${zoomAnimation} 1s ease-in-out;
-    animation-delay: 1.75s;
+    animation-delay: 1.5s;
   }
 
   img {

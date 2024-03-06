@@ -22,7 +22,7 @@ export default createGlobalStyle`
     }
 
     body {
-      background: #111111;
+      background: url("https://static.vecteezy.com/ti/vetor-gratis/p1/5264975-abstract-dark-blue-lines-and-shape-background-design-usable-for-background-wallpaper-banner-poster-brochure-card-web-presentation-vetor.jpg");
     }
 }
 `

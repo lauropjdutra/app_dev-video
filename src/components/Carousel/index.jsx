@@ -30,13 +30,13 @@ export const CarouselPosters = ({ data, changeVideo, selected }) => {
       items: 4,
     },
     responsiveMobile: {
-      breakpoint: { max: 620, min: 464 },
+      breakpoint: { max: 620, min: 0 },
       items: 3,
     },
-    mobile: {
-      breakpoint: { max: 464, min: 0 },
-      items: 2,
-    },
+    // mobile: {
+    //   breakpoint: { max: 464, min: 0 },
+    //   items: 2,
+    // },
   };
 
   const getMovies = (category) =>

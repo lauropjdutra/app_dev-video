@@ -1,8 +1,6 @@
 import { useState, useEffect } from "react";
-
 import { apiData } from "./api/data";
 import axios from "axios";
-
 import { LoadingSpinner } from "./components/LoadingSpinner";
 import { Background } from "./components/Background";
 import { Header } from "./components/Header";

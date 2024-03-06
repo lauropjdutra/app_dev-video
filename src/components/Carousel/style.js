@@ -9,6 +9,11 @@ export const Container = styled.div`
     margin-bottom: 2rem;
     height: 34vh;
 
+    @media (max-width: 720px) {
+      height: 22vh;
+      margin: 0.5rem 0 2rem;
+    }
+
     & li {
       display: flex;
       align-items: center;
@@ -19,10 +24,18 @@ export const Container = styled.div`
       background: #00000077;
       border: 1px solid #fff;
     }
+
+    .react-multiple-carousel__arrow--right {
+      right: 1.5%;
+    }
+
+    .react-multiple-carousel__arrow--left {
+      left: 1.5%;
+    }
   }
 
   @media (max-width: 720px) {
-    padding: 1.25rem;
+    padding: 1.5rem 1rem 1rem;
   }
 `;
 
@@ -31,10 +44,15 @@ export const Title = styled.h3`
   color: #ffffff;
   font-size: 1.25rem;
   font-weight: 600;
-  /* display: flex; */
   margin: 1rem 0 0 10px;
   border-bottom: 1px solid #49cafa;
   padding: 0 10px 10px;
+
+  @media (max-width: 720px) {
+    font-size: 1rem;
+    padding: 0 5px 5px;
+    margin: 1rem 0 0 10px;
+  }
 `;
 
 export const PosterImage = styled.div`
@@ -44,24 +62,27 @@ export const PosterImage = styled.div`
   border-radius: 1.25rem; // 10px
   cursor: pointer;
   transform: scale(0.95);
-  transition: all ease-in-out 0.4s;
-  filter: brightness(0.9);
+  transition: all ease-in-out 0.3s;
+  filter: brightness(0.8);
+  /* filter: blur(0.5px); */
 
   &:hover {
     transform: scale(1);
-    transition: all ease-in-out 0.4s;
+    transition: all ease-in-out 0.3s;
   }
 
   &.selected {
     filter: brightness(1.1);
+    /* filter: blur(0px); */
+    /* box-shadow: 0 0 5px #ffffff; */
     transform: scale(1);
-    transition: all ease-in-out 0.4s;
+    transition: all ease-in-out 0.3s;
     transform: translateY(-20px);
   }
 
   @media (max-width: 720px) {
-    width: 9rem;
-    height: 13rem;
+    width: 32vw;
+    height: 42vw;
   }
   
   &.selected {
@@ -74,5 +95,6 @@ export const AltImage = styled.img`
   text-align: center;
   color: #dddddd;
   padding: 0 30px;
+  font-size: 12px;
   z-index: -1;
 `;

@@ -18,6 +18,10 @@ export const CopyrightFooter = styled.footer`
     font-weight: 300;
     font-size: 0.9rem;
     word-spacing: 1px;
+
+    @media (max-width: 720px) {
+      font-size: 0.8rem;
+    }
   }  
   
   a {
