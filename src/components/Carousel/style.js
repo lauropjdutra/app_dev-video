@@ -62,21 +62,18 @@ export const PosterImage = styled.div`
   border-radius: 1.25rem; // 10px
   cursor: pointer;
   transform: scale(0.95);
-  transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.2s;
   filter: brightness(0.8);
-  /* filter: blur(0.5px); */
 
   &:hover {
     transform: scale(1);
-    transition: all ease-in-out 0.3s;
+    transition: all ease-in-out 0.2s;
   }
 
   &.selected {
     filter: brightness(1.1);
-    /* filter: blur(0px); */
-    /* box-shadow: 0 0 5px #ffffff; */
     transform: scale(1);
-    transition: all ease-in-out 0.3s;
+    transition: all ease-in-out 0.2s;
     transform: translateY(-20px);
   }
 

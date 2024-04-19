@@ -10,4 +10,4 @@ Ao abrir o site, o primeiro item será exibido em detalhes: logo, descrição, p
 
 ## 🖥 Tecnologias
 
-Este projeto foi desenvolvido com React.js e Vite, utilizando Styled Components para estilização.
+O projeto foi desenvolvido utilizando Vite como ferramenta de construção rápida para aplicativos web. Com o React.js como biblioteca principal para a criação da interface do usuário, o código foi organizado em componentes reutilizáveis para facilitar a manutenção e escalabilidade do projeto. Além disso, a estilização foi feita utilizando styled-components, permitindo a criação de estilos de forma declarativa e encapsulada, o que ajuda a evitar conflitos e facilita a manutenção do código. A combinação dessas tecnologias proporcionou uma experiência de desenvolvimento ágil e eficiente, resultando em um projeto bem estruturado, modular e esteticamente agradável.
